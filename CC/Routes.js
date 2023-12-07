@@ -19,12 +19,12 @@ routes.post('/api/auth/confirm', ConfirmEmail);
 routes.post('/api/auth/forgotpassword', ForgotPassword);
 
 // Customers Page Routes
-routes.get('/api/customers', Customer);
-routes.get('/api/customers/:id', Customer);
+routes.get('/api/customers', CustomerControllers.getAllCustomers);
+routes.get('/api/customers/:id', CustomerControllers.getCustomerById);
 
 // Sellers Pages Route
-routes.get('/api/sellers', Customer);
-routes.get('/api/sellers/:id', Customer);
+routes.get('/api/sellers', SellerControllers.getAllSellers);
+routes.get('/api/sellers/:id', SellerControllers.getSellerById);
 routes.post('/api/sellers/setstatustoko', Customer);
 
 // Product Routes
