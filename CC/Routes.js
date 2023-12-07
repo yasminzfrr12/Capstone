@@ -18,7 +18,7 @@ routes.post('/api/auth/register', Register);
 routes.post('/api/auth/confirm', ConfirmEmail);
 routes.post('/api/auth/forgotpassword', ForgotPassword);
 
-// Customers Page Routes
+// Customers Page Routes 
 routes.get('/api/customers', CustomerControllers.getAllCustomers);
 routes.get('/api/customers/:id', CustomerControllers.getCustomerById);
 

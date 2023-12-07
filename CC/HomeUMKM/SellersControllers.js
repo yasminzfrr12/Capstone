@@ -1,6 +1,6 @@
 const { firestore } = require('../Firebase');
 
-// Get all Sellers
+// Get All Sellers
 const getSellers = async (req, res) => {
   try {
     const sellers = await firestore.collection('sellers').get();
@@ -13,7 +13,7 @@ const getSellers = async (req, res) => {
   }
 };
 
-// get by Id
+// Get by Id
 const getSellerById = async (req, res) => {
   const sellerId = req.params.id;
 
